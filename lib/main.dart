@@ -1,14 +1,10 @@
 import 'package:blog/Home.dart';
-import 'package:blog/scrollManagement.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-      MultiProvider(providers: [
-        ChangeNotifierProvider(create: (_) => ScrollManagement()),
-      ], child: MyApp(),)
+    MyApp(),
   );
 }
 
